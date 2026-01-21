@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZyrexByte • Produtos</title>
+  <meta name="description" content="ZyrexByte — vitrine de produtos com visual tech premium." />
+  <meta name="theme-color" content="#000000" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body id="top">
+<header class="header">
+    <div class="brand">
+      <img class="brand__logo" src="assets/logo.png" alt="ZyrexByte" />
+      <div class="brand__text">
+        <h1 class="brand__name">zyrexbyte</h1>
+        <p class="brand__tagline">Tecnologia • Produtos • Dicas</p>
+      </div>
+    </div>
+
+    <div class="header__actions">
+      <a class="pill" href="#como-funciona" title="Como funciona?">
+        <span class="pill__dot"></span>
+        Como funciona?
+      </a>
+      <a class="pill" href="#produtos" title="Ver produtos">
+        <span class="pill__dot"></span>
+        Produtos
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <h2 class="hero__title">
+          Vitrine minimalista, <span class="hero__accent">absurdamente linda</span>.
+        </h2>
+        <p class="hero__subtitle">
+          Confira os itens da nossa loja. Cada item mostra apenas “Ver produto” e o botão “Comprar”.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#produtos">Ver produtos</a>
+          <a class="btn btn--ghost" href="#como-funciona">Como funciona?</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__k">100%</span>
+            <span class="stat__l">Responsivo</span>
+          </div>
+          <div class="stat">
+            <span class="stat__k">0</span>
+            <span class="stat__l">Frameworks</span>
+          </div>
+          <div class="stat">
+            <span class="stat__k">⚡</span>
+            <span class="stat__l">Ultra leve</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__panel">
+        <div class="panel">
+          <div class="panel__top">
+            <div class="panel__chip">Destaque</div>
+            <div class="panel__lights" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="panel__body">
+            <p class="panel__label">Último item adicionado</p>
+            <h3 id="featuredTitle" class="panel__title">Carregando…</h3>
+            <p id="featuredDesc" class="panel__desc">—</p>
+            <div class="panel__buttons">
+              <a id="featuredView" class="btn btn--ghost btn--sm" href="#produtos">Ver produto</a>
+              <a id="featuredBuy" class="btn btn--primary btn--sm" href="#produtos">Comprar</a>
+            </div>
+          </div>
+          <div class="panel__footer">
+            <span class="panel__hint">Visual leve e rápido, mantendo o estilo tech ZyrexByte.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="como-funciona" class="how">
+      <div class="section-head">
+        <h3 class="section-title">Como funciona?</h3>
+        <div class="section-tools">
+          <span class="how__mini">Compra rápida • Direto ao ponto • Seguro</span>
+        </div>
+      </div>
+
+      <div class="how__wrap">
+        <div class="how__card">
+          <div class="how__num">1</div>
+          <h4 class="how__title">Escolha o item</h4>
+          <p class="how__text">
+            Role a página e veja os <strong>itens da nossa loja</strong>. Cada produto tem imagem e uma descrição
+            curta pra você entender rápido.
+          </p>
+        </div>
+
+        <div class="how__card">
+          <div class="how__num">2</div>
+          <h4 class="how__title">Clique em “Comprar”</h4>
+          <p class="how__text">
+            Gostou? Clique no botão <strong>Comprar</strong> do produto. Você será redirecionado para a página oficial
+            de compra.
+          </p>
+        </div>
+
+        <div class="how__card">
+          <div class="how__num">3</div>
+          <h4 class="how__title">Finalize com segurança</h4>
+          <p class="how__text">
+            O pagamento e a entrega ficam na plataforma parceira (loja/marketplace/site oficial). Nosso site é a
+            <strong>vitrine</strong> pra você encontrar tudo em um só lugar.
+          </p>
+        </div>
+      </div>
+
+      <div class="how__cta">
+        <div class="how__ctaBox">
+          <div>
+            <p class="how__ctaTitle">Pronto para comprar?</p>
+            <p class="how__ctaText">Veja os produtos disponíveis e clique em <strong>Comprar</strong> no item desejado.</p>
+          </div>
+          <a class="btn btn--primary" href="#produtos">Ver itens da nossa loja</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="produtos" class="products">
+      <div class="section-head">
+        <h3 class="section-title">Produtos</h3>
+        <div class="section-tools">
+          <label class="search">
+            <span class="search__icon" aria-hidden="true">⌕</span>
+            <input id="searchInput" type="search" placeholder="Buscar produto…" autocomplete="off" />
+          </label>
+        </div>
+      </div>
+
+      <div id="productsGrid" class="grid" aria-live="polite"></div>
+
+      <div id="emptyState" class="empty" hidden>
+        <p class="empty__title">Nada encontrado.</p>
+        <p class="empty__subtitle">Tente outra palavra na busca.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__left">
+      <img class="footer__logo" src="assets/logo.png" alt="" aria-hidden="true" />
+      <span>© <span id="year"></span> zyrexbyte</span>
+    </div>
+    <div class="footer__right">
+      <a class="footer__link" href="#top">Topo do site</a>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+
+<a href="https://www.instagram.com/zyrexbyte_/" target="_blank" class="ig-float" aria-label="Instagram ZyrexByte">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm0 7.9A3.1 3.1 0 1 1 15.1 12 3.1 3.1 0 0 1 12 15.1zM17.2 6.6a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/>
+  </svg>
+</a>
+
+</body>
+</html>
